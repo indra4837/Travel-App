@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/widget/drawer.dart';
 import 'itinerary.dart';
 import 'package:myfirstapp/models/destinations_model.dart';
 
@@ -78,6 +79,8 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
-        ]));
+        ]),
+        drawer: myDrawer(),
+    );
   }
 }

@@ -69,8 +69,11 @@ class _LoginPageState extends State<LoginPage> {
                               children: <Widget>[
                                 RaisedButton(
                                   onPressed: () {
-                                    MaterialPageRoute(
-                                        builder: (context) => HomeScreen());
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => HomeScreen()),
+                                    );
                                   },
                                   child: Text('Sign in'),
                                   color: Colors.white,
